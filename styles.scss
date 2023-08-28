@@ -1,0 +1,209 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    color:aliceblue
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(7,5,5,1) 6%, rgba(0,102,177,0.9590834697217676) 100%); 
+
+    > main{
+        padding: 0 30px 30px;
+    }
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+    justify-content: center;
+    background-color: black;
+}
+
+main{
+    .page-title{
+        font-size: 40px;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+
+        img{
+            padding: 5px;
+        }
+    }
+
+    section{
+
+        .btn, button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            img{
+                width: 70%;
+            }
+
+            &:hover{
+                background: #dddddd;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    aside{
+        margin-left: 30px;
+        padding: 10px;
+        button{
+            cursor: pointer;
+        }
+
+        .box{
+            background-color: rgb(120, 149, 175);
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            header{
+                font-size: 17px;
+                padding: 15px 20px;
+                background: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+        > button{
+            background: linear-gradient(90deg, rgba(0,0,0,0.5747549019607843) 31%, rgba(6,141,31,0.7624299719887955) 100%);
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            padding: 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &:hover{
+                background:rgb(33, 148, 33);
+            }
+        }
+
+        .info{
+            padding: 20px;
+            button{
+                background: none;
+            }
+            img{
+                width: 7%
+            }
+
+            > div{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            button{
+                color: rgb(10, 73, 10);
+                background: transparent;
+                border: 0;
+                display: flex;
+                align-items: center;
+
+            }
+        }
+
+        footer{
+            display: flex;
+            background: rgb(29,36,95);
+            background: linear-gradient(90deg, rgba(29,36,95,0.5747549019607843) 31%, rgba(6,31,141,0.7624299719887955) 100%);
+            font-size: 17px;
+            padding: 15px 20px;
+            justify-content: space-between;
+        }
+    }
+
+    .content{
+        display: flex;
+        section{
+            flex: 1;
+        }
+
+        aside{
+            min-width: 250px;
+
+        }
+    }
+}
+
+table{
+    width: 98%;
+    margin-left: 2%;
+    border-collapse: collapse;
+    thead{
+        tr{
+            border-bottom: 3px solid #ccc;
+            th{
+                text-align: left;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                color: #dddddd
+
+            }
+        }
+    }
+    tbody{
+        tr{
+            border-bottom: 3px solid #ccc;
+
+            &:last-child{
+                border: 0;
+            }
+            td {
+                div{
+                    margin: 20px 0;  
+                }
+
+                .qty{
+                    display: inline-flex;
+                    justify-content: space-around;
+                    min-width: 60px;
+                    align-items: center;
+                    overflow: hidden;
+
+                    span{
+                        margin: 0 10px;
+                    }
+
+                    button{
+                        display: flex;
+                        align-items: center;
+                        padding: 5px;
+                        font-size: 20px;
+
+                        &:hover{
+                            background: #dddddd;
+                            border-radius: 5px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product{
+    display: flex;
+    align-items: center;
+
+    img {
+        border-radius: 6px;
+    }
+
+    .info{
+        margin-left: 20px;
+        .name{
+            font-size: 20px;
+        }
+        .category{
+            color: #666
+        }
+
+    }
+}
